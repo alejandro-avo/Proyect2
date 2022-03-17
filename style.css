@@ -1,0 +1,224 @@
+html, body {
+    height: 100%;
+}
+
+body{
+    background-color: #727272;
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+}
+
+.navegacion{
+    display: grid;
+    grid-template-columns: 100px auto 150px;
+    background-color: #272727;
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+}
+
+#loguito{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 5px 1fr;
+    grid-template-rows: 1fr 5px 1fr;
+    border: solid;
+    border-radius: 100%;
+    margin: 1px
+}
+.loguito1{
+    background-color: #60e4e9;
+    grid-row: 1;
+    border-radius: 3px;
+}
+.loguito2{
+    background-color: #3b3b3b;
+    grid-area: 1/3/2/3;
+    border-radius: 3px;
+}
+.loguito3{
+    background-color: #3b3b3b;
+    grid-row: 3 ;
+    border-radius: 3px;
+}
+.buscar{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+#busqueda{
+
+    border: 0;
+    height: 37.5px;
+    width: 80%;
+    border-radius: 3px;
+    background-color: #60e5e9ad;
+}
+#botones{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 5px 1fr 5px 1fr;
+    grid-template-rows: 1fr 5px 1fr;
+}
+#boton1{
+    background-color: #3b3b3b;
+    grid-row: 1;
+    grid-column: 3;
+    border-radius: 3px;
+}
+#boton2{
+    background-color: #3b3b3b;
+    grid-row: 3;
+    border-radius: 3px;
+}
+#boton3{
+    background-color: #3b3b3b;
+    grid-row: 3;
+    grid-column: 3;
+    border-radius: 3px;
+}
+#boton4{
+    background-color: #3b3b3b;
+    grid-row: 3;
+    grid-column: 5;
+    border-radius: 3px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto 50px 380px;
+    grid-template-rows: 80% auto;
+    height: 300px;
+    width: 90%;
+    margin: 20px 0;
+    object-fit: cover;
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap');
+h1{
+    background-color: #cfd1ce;
+    margin: 0 20px 20px 0;
+    border-radius: 5px;
+    color: #1b6775;
+    padding: 10px;
+    font-family:'Anonymous Pro', monospace;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+header p{
+    background-color: #3b3b3b;
+    grid-area: 2/1/3/3;
+    margin: 0 20px 0 0;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: justify;
+    color: #cfd1ce;
+    font-family: sans-serif;
+}
+.imagen{
+    background-color: #272727;
+    grid-area: 1/2/2/4;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.imag{
+    background-color: #272727;
+    grid-area: 1/3/3/5;
+    border-radius: 5px;
+}
+.contboton{
+    grid-area: 2/3/3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #1b6775;
+    color: #cfd1ce;
+    font-family:'Anonymous Pro', monospace;
+    font-size: 30px;
+    border-style: none;
+    letter-spacing: 5px ;
+}
+.boton:active{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #0e3d46;
+    color: #92998f;
+    font-family:'Anonymous Pro', monospace;
+    font-size: 30px;
+    border-style: none;
+}
+.boton:hover{
+    width: 210px;
+    height: 70px;
+    font-size: 35px;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#informacion{
+    display: grid;
+    grid-template-columns: 1fr 5px 1fr 5px 1fr;
+    grid-template-rows: 1fr 5px 1fr;
+    height: 500px;
+    width: 70%;
+    margin: 20px 0;
+}
+.background-image{
+    opacity: 0.5;
+    position: absolute;
+    height: 50%;
+}
+#nosotros{
+    background-image: url(up.png);
+    background-position: center;
+    grid-column: 3;
+    grid-row: 1;
+    padding: 10px;
+
+}
+#productos{
+    background-image: url(left.png);
+    background-position: center;
+    grid-column: 1;
+    grid-row: 3;
+    padding: 10px;
+}
+#nosekekosa{
+    background-image: url(right.png);
+    background-position: center;
+    grid-column: 5;
+    grid-row: 3;
+    padding: 10px;
+}
+#down{
+    background-image: url(down.png);
+    background-position: center;
+    grid-column: 3;
+    grid-row: 3;
+    padding: 10px;
+}
+
+#caracteristicas{
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
